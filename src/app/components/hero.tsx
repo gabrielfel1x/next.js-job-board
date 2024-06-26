@@ -8,7 +8,7 @@ export default function Hero() {
       <p className="text-center text-gray-500">
         Where Experience Meets Opportunity
       </p>
-      <form className="flex gap-2 mt-4 max-w-xl mx-auto">
+      <form className="container flex gap-2 mt-4 max-w-2xl mx-auto">
         <input
           type="search"
           className="border border-gray-400 w-full py-2 px-3 rounded-md"
