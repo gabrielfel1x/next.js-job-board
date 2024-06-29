@@ -7,6 +7,7 @@ export default function Jobs() {
         <h2 className="font-bold text-xl pb-2">Recent Opportunities</h2>
         <div className="flex flex-col gap-4">
           <JobRow />
+          <JobRow />
         </div>
       </div>
     </div>

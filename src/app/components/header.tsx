@@ -1,7 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
+import { getSignInUrl, getUser } from "@workos-inc/authkit-nextjs";
 
-export default function Header() {
+export default async function Header() {
+  const { user } = await getUser();
+  const signInUrl = await getSignInUrl();
+
   return (
     <header>
       <div className="container flex flex-row items-center justify-between py-4 mx-auto border-b">
@@ -12,9 +16,11 @@ export default function Header() {
           <Link href={"http://github.com/gabrielfel1x"}>
             <Image src="github-mark.svg" alt="" width={34} height={34} />
           </Link>
-          <Link className="bg-gray-200 py-2 px-4" href={"/login"}>
-            SignIn
-          </Link>
+          {!user && (
+            <Link className="bg-gray-200 py-2 px-4" href={signInUrl}>
+              SignIn
+            </Link>
+          )}
           <Link
             className="bg-green-400 text-white py-2 px-4"
             href={"/new-listing"}
