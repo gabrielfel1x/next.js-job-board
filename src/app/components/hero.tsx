@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section className="py-12">
       <h1 className="text-4xl font-bold text-center">
-        Find Your Perfect <br />
+        Discover Your Perfect <br />
         Job Match
       </h1>
       <p className="text-center text-gray-500">
