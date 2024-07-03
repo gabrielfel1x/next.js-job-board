@@ -16,6 +16,7 @@ export default async function Header() {
         </Link>
         <Link
           href={"http://github.com/gabrielfel1x"}
+          target="_blank"
           className="absolute top-6 left-2/4"
         >
           <Image src="github-mark.svg" alt="" width={34} height={34} />
@@ -30,7 +31,7 @@ export default async function Header() {
             <>
               <Link
                 className="bg-green-400 text-white py-2 px-4"
-                href={"/new-listing"}
+                href={"/post-list"}
               >
                 Post Job
               </Link>
